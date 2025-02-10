@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y python3 python3-pip
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+CMD python3 app.py
+#Create a dummy requirements file
+#Create a dummy app.py file
+#touch requirements.txt
+echo "requests" > requirements.txt
+touch app.py
+echo "print('Hello from Docker!')" > app.py
