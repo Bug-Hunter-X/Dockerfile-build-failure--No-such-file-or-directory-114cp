@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: attempting to copy a file that does not exist in the build context.  The original Dockerfile attempts to copy requirements.txt, which is not included in the context. The solution demonstrates how to correctly include the file and build the image successfully.
